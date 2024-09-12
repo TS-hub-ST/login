@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style type="text/css">
+        form{
+            background-color: blanchedalmond;
+            width: 40%;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+        input,textarea,select{
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 3px 3px 3px gray;
+
+        }
+        h2{
+            font-size: 30px;
+            color: navy;
+            text-shadow: -5px -5px -5px cyan;
+        }
+    </style>
+</head>
+<body style="background-color: burlywood;">
+    <h1 style="color: rgb(76, 83, 81); text-align: center;">Welcome to Register Page</h1>
+
+    <form name="regform">
+        <h2><b>Register Form</b></h2>
+        
+        <input type="text" name="username" placeholder="Enter username">
+        <br><input type="email" name="email" placeholder="Enter email">
+        <br><input type="password" name="password" placeholder="Enter password" maxlength="6" >
+        
+        <br><textarea placeholder="Address" rows="5" cols="30"></textarea>
+        
+        <br><input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> other
+        
+        <br>
+        <input type="checkbox" name="course[]"> Web Design
+        <input type="checkbox" name="course[]"> Python
+        <input type="checkbox" name="course[]"> Cloud
+        <input type="checkbox" name="course[]"> Networking
+        
+        <br>
+        <select name="time">
+            <option>9:00PM - 11:00PM</option>
+            <option>12:00PM - 2:00PM</option>
+            <option>3:00PM- 5:00PM</option>
+        </select>
+
+        <br><input type="submit" name="login" value="Register Now">
+        <input type="reset" name="cancel" value="Cancel">
+        
+    </form>
+</body>
+</html>
